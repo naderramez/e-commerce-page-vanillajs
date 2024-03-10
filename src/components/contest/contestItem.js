@@ -25,8 +25,6 @@ class ContestItem extends HTMLElement {
   }
 
   get contestItem() {
-    // return this.getAttribute("contestItem");
-    // return JSON.parse(decodeURIComponent(this.getAttribute("contestItem")));
     return decodePropsObj(this.getAttribute("contestItem"));
   }
 

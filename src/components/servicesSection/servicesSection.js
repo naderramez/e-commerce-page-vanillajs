@@ -15,6 +15,7 @@ class ServicesSection extends HTMLElement {
     this.innerHTML = `
       <service-addons></service-addons>
       <purchase-service quantity="1" price="100"></purchase-service>
+      <service-rating-section></service-rating-section>
     `;
   }
 }

@@ -6,6 +6,15 @@
   --filter-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(222deg) brightness(104%) contrast(101%);
 }
 
+textarea {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 8px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
 .flex {
   display: flex;
 }
@@ -30,6 +39,15 @@
   filter: var(--filter-white);
 }
 
+.primary-btn {
+  background-color: var(--primary);
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .app-header {
   display: flex;
   align-items: center;
@@ -40,9 +58,7 @@
 }
 
 .navbar-container {
-  display: flex;
-  align-items: center;
-  column-gap: 40px;
+  display: none;
 }
 
 .user-settings-container {}
@@ -69,7 +85,7 @@
 }
 
 .page-container {
-  padding: 20px 60px;
+  padding: 20px 20px;
   background-color: #FDFDFD;
 }
 
@@ -134,7 +150,7 @@
   position: absolute;
   display: flex;
   column-gap: 10px;
-  bottom: 100px;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -279,4 +295,202 @@
   width: 100%;
   border: none;
   cursor: pointer;
+}
+
+.service-rating-section {
+  margin-top: 80px;
+}
+
+.service-rating-section .service-rating-section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.metrics-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0px 3px 40px -5px #20202012;
+}
+
+.metric-item-container {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.metric-item-container .metric-title {
+  min-width: 30%;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.metric-item-container .metric-bar-rating {
+  display: flex;
+  column-gap: 20px;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.metric-item-container .metric-bar-rating .metric-bar {
+  height: 8px;
+  border-radius: 6px;
+  background-color: #E6EAEF;
+  flex-grow: 1;
+}
+
+.metric-item-container .metric-bar-rating .metric-bar .metric-bar-filled {
+  height: 8px;
+  border-radius: 6px;
+  background-color: #FFCB31;
+  border-radius: 6px, 0px, 0px, 6px;
+}
+
+.card-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0px 3px 40px -5px #20202012;
+}
+
+.review-section-container {
+  margin-top: 30px;
+}
+
+.review-section-container .review-items-container {
+  margin-bottom: 30px;
+}
+
+.review-item-container {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.review-item-container .review-item-data-container {
+  
+}
+
+.review-item-container .review-item-data-container h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.review-item-container .review-item-data-container p {
+  color: #333333;
+}
+
+.review-stars-container {}
+
+.post-review-container {
+  display: flex;
+  column-gap: 20px;
+}
+
+.post-review-container .form-container {
+  flex-grow: 1;
+  padding-right: 30px;
+}
+
+.post-review-container .form-container textarea {
+  margin-bottom: 20px;
+}
+
+.primary-and-secondary-container {
+  display: block;
+}
+
+.primary-section {
+  margin-bottom: 20px;
+  flex-basis: unset;
+}
+
+.secondary-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex-basis: unset;
+}
+
+.seller-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 6px;
+}
+
+.service-item-container {}
+
+.service-image-container {
+  position: relative;
+}
+
+.service-image-container .heart-circle-container {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
+.service-image-container .heart-circle {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-item-data-container {
+  background-color: white;
+  padding: 20px 10px;
+  box-shadow: 0px 3px 40px -5px #20202012;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.service-item-data-container h3 {
+  display: -webkit-box;
+  /* max-width: 200px; */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.suggested-services-items-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .primary-and-secondary-container {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .primary-section {
+    flex-basis: 75%;
+  }
+
+  .secondary-section {
+    flex-basis: 25%;
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  .page-container {
+    padding: 20px 60px;
+  }
+
+  .suggested-services-items-container {
+    flex-direction: row;
+    column-gap: 20px;
+  }
 }

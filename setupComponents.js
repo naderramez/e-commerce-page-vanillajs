@@ -2,13 +2,22 @@ import ContestCarousel from "./src/components/contest/contestCarousel";
 import ContestHeader from "./src/components/contest/contestHeader";
 import ContestItem from "./src/components/contest/contestItem";
 import Header from "./src/components/header";
+import InfoCard from "./src/components/infoCard";
 import NavBar from "./src/components/navBar";
 import NavItem from "./src/components/navItem";
+import SellerCard from "./src/components/sellerCard";
 import PurchaseService from "./src/components/servicesSection/purchaseService";
 import ServiceAddonItem from "./src/components/servicesSection/serviceAddonItem";
 import ServiceAddons from "./src/components/servicesSection/serviceAddons";
+import RatingMetricItem from "./src/components/servicesSection/serviceRatingSection/ratingMetricItem";
+import RatingMetrics from "./src/components/servicesSection/serviceRatingSection/ratingMetrics";
+import ReviewItem from "./src/components/servicesSection/serviceRatingSection/reviewItem";
+import ReviewSection from "./src/components/servicesSection/serviceRatingSection/reviewSection";
 import ServiceRatingSection from "./src/components/servicesSection/serviceRatingSection/serviceRatingSection";
 import ServicesSection from "./src/components/servicesSection/servicesSection";
+import ShareCard from "./src/components/shareCard";
+import SuggestedServiceCard from "./src/components/suggestedServiceCard";
+import SuggestedServicesSection from "./src/components/suggestedServicesSection";
 import ContestPage from "./src/pages/contestPage";
 
 export const setupComponents = () => {
@@ -24,4 +33,13 @@ export const setupComponents = () => {
   customElements.define("services-section", ServicesSection);
   customElements.define("purchase-service", PurchaseService);
   customElements.define("service-rating-section", ServiceRatingSection);
+  customElements.define("rating-metrics", RatingMetrics);
+  customElements.define("rating-metric-item", RatingMetricItem);
+  customElements.define("review-section", ReviewSection);
+  customElements.define("review-item", ReviewItem);
+  customElements.define("seller-card", SellerCard);
+  customElements.define("info-card", InfoCard);
+  customElements.define("share-card", ShareCard);
+  customElements.define("suggested-services-section", SuggestedServicesSection);
+  customElements.define("suggested-service-card", SuggestedServiceCard);
 };
